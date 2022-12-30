@@ -5,6 +5,7 @@ root = Tk()
 root.title('Convertor')
 root.geometry('1280x720')
 
+
 # Define All Variables
 num = IntVar()
 lblbinary = StringVar()
@@ -40,7 +41,7 @@ def exit():  # function of exit the program
 
 # Define all labels in program
 
-Label(root, text='Conversion System', font=('Poppins', 50, 'bold'), bg='gray', fg='white', relief=RIDGE).pack(pady=10)
+Label(root, text='Conversion System', font=('Poppins', 50, 'bold'), bg='crimson', fg='black', relief=RIDGE).pack(pady=10)
 
 n = Label(root, text='Enter Number :', font=('Poppins', 20, 'bold'), fg='blue')
 n.place(x=300, y=150)
