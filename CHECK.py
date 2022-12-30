@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 root=Tk()
 root.title('Convertor')
 root.geometry('1280x720')
@@ -11,6 +12,16 @@ lblhexa = StringVar()
 lbloctal = StringVar()
 # Define Functions
 def convert():
+    if num.get()==0:
+        messagebox.showerror('Error','You must enter a number to convert !!!')
+
+    else:
+        lblbinary.set(str(bin(num.get())))
+        lbldecimal.set(str(num.get()))
+        lblhexa.set(str(hex(num.get())))
+        lbloctal.set(str(oct(num.get())))
+
+
 
 Label(root,text='Conversion System',font=('Poppins',50,'bold'),bg='gray',fg='white',relief=RIDGE).pack(pady=10)
 
