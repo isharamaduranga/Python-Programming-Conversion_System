@@ -5,7 +5,7 @@ root = Tk()
 root.title('Convertor')
 root.geometry('1280x720')
 
-# Define Variables
+# Define All Variables
 num = IntVar()
 lblbinary = StringVar()
 lbldecimal = StringVar()
@@ -13,8 +13,8 @@ lblhexa = StringVar()
 lbloctal = StringVar()
 
 
-# Define Functions
-def convert():
+# Define All Functions
+def convert():  # function of convert numbers are you input format
     if num.get() == 0:
         messagebox.showerror('Error', 'You must enter a number to convert !!!')
 
@@ -25,7 +25,7 @@ def convert():
         lbloctal.set(str(oct(num.get())))
 
 
-def clear():
+def clear():  # function of clear input fields....
     num.set(0)
     lblbinary.set('')
     lbldecimal.set('')
@@ -33,10 +33,12 @@ def clear():
     lbloctal.set('')
 
 
-def exit():
-    if messagebox.askyesno('Exit','Do You really want to exit ?'):
+def exit():  # function of exit the program
+    if messagebox.askyesno('Exit', 'Do You really want to exit ?'):
         root.destroy()
 
+
+# Define all labels in program
 
 Label(root, text='Conversion System', font=('Poppins', 50, 'bold'), bg='gray', fg='white', relief=RIDGE).pack(pady=10)
 
@@ -55,6 +57,8 @@ h.place(x=300, y=390)
 o = Label(root, text='Octal :', font=('Poppins ', 20, 'bold'), fg='purple')
 o.place(x=300, y=470)
 
+# Define all Input Fields of related labels in program
+
 e1 = Entry(root, font='arial 20 ', fg='blue', justify=CENTER, relief=GROOVE, textvariable=num)
 e1.place(x=650, y=150)
 
@@ -70,13 +74,15 @@ e4.place(x=650, y=390)
 e5 = Entry(root, font='arial 20 ', fg='red', justify=CENTER, relief=GROOVE, textvariable=lbloctal)
 e5.place(x=650, y=470)
 
-btn1 = Button(root, text='Converter', font='arial  20 bold', fg='lime', bg='black', width=8, border=5,command=convert)
+# Define all Buttons(convert / clear / exit) in program
+
+btn1 = Button(root, text='Converter', font='arial  20 bold', fg='lime', bg='black', width=8, border=5, command=convert)
 btn1.place(x=300, y=580)
 
-btn1 = Button(root, text='Clear', font='arial  20 bold', fg='gold', bg='black', width=8, border=5,command=clear)
+btn1 = Button(root, text='Clear', font='arial  20 bold', fg='gold', bg='black', width=8, border=5, command=clear)
 btn1.place(x=550, y=580)
 
-btn1 = Button(root, text='Exit...', font='arial  20 bold', fg='red', bg='black', width=8, border=5,command=exit)
+btn1 = Button(root, text='Exit...', font='arial  20 bold', fg='red', bg='black', width=8, border=5, command=exit)
 btn1.place(x=800, y=580)
 
 root.mainloop()
