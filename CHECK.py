@@ -33,7 +33,9 @@ def clear():
     lbloctal.set('')
 
 
-
+def exit():
+    if messagebox.askyesno('Exit','Do You really want to exit ?'):
+        root.destroy()
 
 
 Label(root, text='Conversion System', font=('Poppins', 50, 'bold'), bg='gray', fg='white', relief=RIDGE).pack(pady=10)
@@ -74,7 +76,7 @@ btn1.place(x=300, y=580)
 btn1 = Button(root, text='Clear', font='arial  20 bold', fg='gold', bg='black', width=8, border=5,command=clear)
 btn1.place(x=550, y=580)
 
-btn1 = Button(root, text='Exit...', font='arial  20 bold', fg='red', bg='black', width=8, border=5)
+btn1 = Button(root, text='Exit...', font='arial  20 bold', fg='red', bg='black', width=8, border=5,command=exit)
 btn1.place(x=800, y=580)
 
 root.mainloop()
