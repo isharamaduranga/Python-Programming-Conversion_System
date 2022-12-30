@@ -9,17 +9,17 @@ Label(root,text='Conversion System',font=('times new rommon ',50,'bold'),bg='gra
 n=Label(root,text='Enter Number :',font=('times new rommon ',20,'bold'),fg='blue')
 n.place(x=300,y=150)
 
-n=Label(root,text='Binary :',font=('times new rommon ',20,'bold'),fg='blue')
-n.place(x=300,y=230)
+b=Label(root,text='Binary :',font=('times new rommon ',20,'bold'),fg='blue')
+b.place(x=300,y=230)
 
-n=Label(root,text='Decimal :',font=('times new rommon ',20,'bold'),fg='blue')
-n.place(x=300,y=310)
+d=Label(root,text='Decimal :',font=('times new rommon ',20,'bold'),fg='blue')
+d.place(x=300,y=310)
 
-n=Label(root,text='HexaDecimal :',font=('times new rommon ',20,'bold'),fg='blue')
-n.place(x=300,y=390)
+h=Label(root,text='HexaDecimal :',font=('times new rommon ',20,'bold'),fg='blue')
+h.place(x=300,y=390)
 
-n=Label(root,text='Octal :',font=('Poppins''sans-serif',20,'bold'),fg='blue')
-n.place(x=300,y=470)
+o=Label(root,text='Octal :',font=('Poppins''sans-serif',20,'bold'),fg='blue')
+o.place(x=300,y=470)
 
 
 
