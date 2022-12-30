@@ -36,13 +36,13 @@ e4.place(x=650,y=390)
 e5= Entry(root,font='arial 20 ',fg='red',justify=CENTER,relief=GROOVE)
 e5.place(x=650,y=470)
 
-btn1=Button(root,text='Converter',font='arial  20 bold',fg='crimson',bg='black')
+btn1=Button(root,text='Converter',font='arial  20 bold',fg='lime',bg='black',width=10)
 btn1.place(x=300,y=580)
 
-btn1=Button(root,text='Converter',font='arial  20 bold',fg='crimson',bg='black')
-btn1.place(x=600,y=580)
+btn1=Button(root,text='Clear',font='arial  20 bold',fg='gold',bg='black',width=10)
+btn1.place(x=550,y=580)
 
-btn1=Button(root,text='Converter',font='arial  20 bold',fg='crimson',bg='black')
-btn1.place(x=900,y=580)
+btn1=Button(root,text='Exit...',font='arial  20 bold',fg='red',bg='black',width=10)
+btn1.place(x=800,y=580)
 
 root.mainloop()
