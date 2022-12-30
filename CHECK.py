@@ -21,10 +21,28 @@ h.place(x=300,y=390)
 o=Label(root,text='Octal :',font=('Poppins ',20,'bold'),fg='purple')
 o.place(x=300,y=470)
 
-e1= Entry(root,font='arial 20 ',fg='red',justify=CENTER,relief=GROOVE)
+e1= Entry(root,font='arial 20 ',fg='blue',justify=CENTER,relief=GROOVE)
 e1.place(x=650,y=150)
 
+e2= Entry(root,font='arial 20 ',fg='red',justify=CENTER,relief=GROOVE)
+e2.place(x=650,y=230)
 
+e3= Entry(root,font='arial 20 ',fg='red',justify=CENTER,relief=GROOVE)
+e3.place(x=650,y=310)
 
+e4= Entry(root,font='arial 20 ',fg='red',justify=CENTER,relief=GROOVE)
+e4.place(x=650,y=390)
+
+e5= Entry(root,font='arial 20 ',fg='red',justify=CENTER,relief=GROOVE)
+e5.place(x=650,y=470)
+
+btn1=Button(root,text='Converter',font='arial  20 bold',fg='crimson',bg='black')
+btn1.place(x=300,y=580)
+
+btn1=Button(root,text='Converter',font='arial  20 bold',fg='crimson',bg='black')
+btn1.place(x=600,y=580)
+
+btn1=Button(root,text='Converter',font='arial  20 bold',fg='crimson',bg='black')
+btn1.place(x=900,y=580)
 
 root.mainloop()
